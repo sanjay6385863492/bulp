@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bulb On/Off</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 50px;
+      }
+      img {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Click to turn the bulb on or off</h2>
+    <img
+      id="bulb"
+      src="https://www.w3schools.com/js/pic_bulboff.gif"
+      alt="Bulb"
+    />
+    <br />
+    <button onclick="turnOn()">Turn On</button>
+    <button onclick="turnOff()">Turn Off</button>
+
+    <script>
+      function turnOn() {
+        document.getElementById("bulb").src =
+          "https://www.w3schools.com/js/pic_bulbon.gif";
+      }
+
+      function turnOff() {
+        document.getElementById("bulb").src =
+          "https://www.w3schools.com/js/pic_bulboff.gif";
+      }
+    </script>
+  </body>
+</html>
